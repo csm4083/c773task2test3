@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v6.0.6, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v6.0.6, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/image-96x97.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Cats</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=NO2Xz7"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=NO2Xz7" type="text/css">
+
+  
+  
+  
+
+<style>
+/* Ensure navbar links remain clickable and above other layers */
+.navbar { z-index: 1040; }
+.navbar a.nav-link { pointer-events: auto; }
+</style>
+<style>
+/* underline the active page link, using the same color as your nav items */
+.navbar .nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: currentColor;
+}
+</style>
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu1 cid-uUlQvQ2NX7" once="menu" id="menu01-6">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="index.html">
+						<img src="assets/images/image-96x97.png" alt="Mobirise Website Builder" style="height: 5rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-danger display-4" href="index.html">Paradigm Pet Professionals</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+						<a class="nav-link link text-danger text-primary display-4" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-danger text-primary display-4 active" href="page1.html" aria-expanded="false">Cats</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-danger text-primary display-4" href="page2.html">Dogs</a>
+					</li><li class="nav-item"><a class="nav-link link text-danger text-primary display-4" href="page3.html">Birds</a></li><li class="nav-item"><a class="nav-link link text-danger text-primary display-4" href="page5.html">Contact Us</a></li></ul>
+				
+				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-secondary display-4" href="page4.html">Get a Consultation Now</a></div>
+			</div>
+		</div>
+	</nav>
+</section>
+<!-- Breadcrumbs -->
+<section class="cid-breadcrumbs py-2" id="breadcrumbs">
+  <div class="container">
+    <div id="breadcrumbs-host"></div>
+  </div>
+</section>
+
+<script>
+// Simple, robust breadcrumbs for your 6-page Mobirise site
+(function () {
+  // Map filenames to labels you want to display
+  const SITE_MAP = {
+    "index.html": "Home",
+    "page1.html": "Cats",
+    "page2.html": "Dogs",
+    "page3.html": "Birds",
+    "page4.html": "Consultation",
+    "page5.html": "Contact Us"
+  };
+
+  // Get current filename safely, even with folders, hashes, or queries
+  function currentFile() {
+    let p = window.location.pathname;
+    let seg = p.substring(p.lastIndexOf("/") + 1);
+    if (!seg) seg = "index.html";               // root -> index.html
+    seg = seg.split("#")[0].split("?")[0];      // strip hash/query
+    if (!/\.html?$/i.test(seg)) seg = "index.html"; // pretty URLs -> index.html
+    return seg;
+  }
+
+  // Build a simple trail: Home -> Current Page (if not on Home)
+  function buildTrail() {
+    const me = currentFile();
+    const items = [];
+    if (me !== "index.html") {
+      items.push({ href: "index.html", label: SITE_MAP["index.html"] });
+      items.push({ href: null, label: SITE_MAP[me] || document.title || "Current Page" });
+    } else {
+      items.push({ href: null, label: SITE_MAP["index.html"] });
+    }
+    return items;
+  }
+
+  function render() {
+    const host = document.getElementById("breadcrumbs-host");
+    if (!host) return;
+
+    const trail = buildTrail();
+
+    const ol = document.createElement("ol");
+    ol.className = "breadcrumb mb-0";
+    ol.setAttribute("itemscope", "");
+    ol.setAttribute("itemtype", "https://schema.org/BreadcrumbList");
+
+    trail.forEach((it, idx) => {
+      const li = document.createElement("li");
+      li.className = "breadcrumb-item";
+      li.setAttribute("itemprop", "itemListElement");
+      li.setAttribute("itemscope", "");
+      li.setAttribute("itemtype", "https://schema.org/ListItem");
+
+      if (it.href) {
+        const a = document.createElement("a");
+        a.href = it.href;
+        a.setAttribute("itemprop", "item");
+        const name = document.createElement("span");
+        name.textContent = it.label;
+        name.setAttribute("itemprop", "name");
+        a.appendChild(name);
+        li.appendChild(a);
+      } else {
+        li.classList.add("active");
+        li.setAttribute("aria-current", "page");
+        const span = document.createElement("span");
+        span.textContent = it.label;
+        span.setAttribute("itemprop", "name");
+        li.appendChild(span);
+      }
+
+      const pos = document.createElement("meta");
+      pos.setAttribute("itemprop", "position");
+      pos.setAttribute("content", String(idx + 1));
+      li.appendChild(pos);
+
+      ol.appendChild(li);
+    });
+
+    const nav = document.createElement("nav");
+    nav.setAttribute("aria-label", "breadcrumb");
+    nav.appendChild(ol);
+
+    host.innerHTML = "";
+    host.appendChild(nav);
+  }
+
+  // Run after DOM is ready
+  document.addEventListener("DOMContentLoaded", render);
+})();
+</script>
+
+<style>
+  /* Optional: light background + tidy spacing */
+  .cid-breadcrumbs { background: #f8f9fa; }
+  .cid-breadcrumbs .breadcrumb { padding: .5rem 0; margin: 0; background: transparent; }
+  .breadcrumb a { text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+</style>
+
+<section data-bs-version="5.1" class="header13 cid-uUlZTQITOA" id="header13-9">
+  
+
+  
+  
+
+  <div class="align-center container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 mb-5 content-head">
+        <h1 class="mbr-section-title mbr-fonts-style display-1">
+          <strong>A Little about Cats</strong></h1>
+        <p class="mbr-text mbr-fonts-style mt-4 display-7">
+          Cats were first domesticated around 7500 BCE in the western Asia region and are currently the second most popular domestic pet in the United States. While there are over 60 unique documented cat breeds, care and diet can differ between breeds. However, some diets and practices are generally recommended for the well-being of your fluffy family member regardless of breed.
+        </p>
+        
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <img src="assets/images/picture5-1100x825.jpg" alt="Mobirise Website Builder" title="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="article07 cid-uUlZ39stZ2" id="article07-8">
+  
+
+  
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="card col-md-12 col-lg-10">
+        <div class="card-wrapper">
+          <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
+            <strong>Caring for Your Cat as They Age</strong></h3>
+          <div class="row card-box align-left">
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Zero to Four Weeks</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7">It is important the queen (a term commonly used for a female cat that is either pregnant or nursing) directly nurse her young if possible. Monitor your kitten’s growth closely to make sure its growth rate is progressing steadily. If any kitten is not growing at a sufficient rate, a caretaker might need to feed the kitten directly either with a bottle or a feeding tube. Some reasons why kittens might not gain weight appropriately include the following:
+<br>•	too many other siblings are competing for mom's milk
+<br>•	gastrointestinal disease
+<br>•	environmental conditions such as extreme heat or cold, or unsanitary conditions
+<br>
+<br></p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Four Weeks to One Year</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7">Kittens can start being introduced to soft wet kitten food typically around three to four weeks after birth. According to the <a href="https://www.aspca.org/" class="text-secondary" target="_blank">ASPCA</a>, kittens at this age should eat half to one cup of dry kitten food or six to nine ounces of wet kitten food per day. If your kitten has difficulties eating hard food, a small amount of water can be added to soften the food. Cat food that is optimized for kittens provides the additional nutrients that are needed for growth, energy, and wellness. Depending on the breed, your cat may have different dietary requirements. You should always consult with your veterinarian for recommendations.
+<br>
+<br></p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>One Year to Seven Years</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                  This age is when kittens reach the cat stage and do not need as many nutrients. At this age, their level of activity decreases, and so does their metabolism. It is not recommended to leave food out for the cats all day. Instead, provide food a couple times a day so they eat meals rather than snacking throughout the day. This practice reduces the risk of obesity and other weight-related feline ailments.
+                </p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Seven Years and More</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                  Much like many living organisms, the body begins to deteriorate and experience a lot of changes. Cats at this age should eat less fats and calories and more quality proteins. This means when you are purchasing packaged foods for your cat, look for food that states a particular protein (such as "salmon") and not just a category (such as fish). This usually means they are byproducts, or combinations, of lesser quality proteins.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="footer2 cid-uUmfrVKB6t" once="footers" id="footer02-m">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 center mt-2 mb-3">
+                <p class="mbr-fonts-style copyright mb-0 display-7">
+                    © Copyright 2025 Paradigm Pet Professionals- All Rights Reserved
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 center">
+                <div class="row-links mt-2 mb-3">
+                    <ul class="row-links-soc">
+                        
+                        
+                        
+                        
+                    <li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-secondary">Instagram</a>
+                        </li><li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-secondary">TikTok</a>
+                        </li><li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-secondary">YouTube</a>
+                        </li><li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-secondary">Twitter</a>
+                        </li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/4159056" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-creator.html">AI Website Creator</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+
+<script>
+/* Force cross-page navigation even if a smooth-scroll or menu script tries to hijack clicks */
+(function(){
+  document.addEventListener('click', function(e){
+    const a = e.target.closest('a[href]');
+    if (!a) return;
+    const href = a.getAttribute('href');
+    if (!href) return;
+    // ignore anchors and protocols we shouldn't override
+    if (/^(#|mailto:|tel:|sms:|javascript:)/i.test(href)) return;
+
+    try {
+      const url = new URL(href, location.href);
+      // Same-origin & different page path -> navigate explicitly
+      if (url.origin === location.origin &&
+          url.pathname.toLowerCase() !== location.pathname.toLowerCase()) {
+        e.stopImmediatePropagation();
+        e.preventDefault();
+        window.location.href = url.href;
+      }
+    } catch (err) {
+      // invalid URL, ignore
+    }
+  }, true); // capture to beat other listeners
+})();
+</script>
+
+</body>
+</html>
